@@ -1,0 +1,98 @@
+html {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  color: white;
+  margin: auto;
+  background: transparent;
+  
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #009933;
+  text-shadow: 2px 2px #B0B0B0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+button {
+  color: gray;
+}
+
+#icon img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+#time {
+  font-size: 0.6em;
+}
+
+#condition_all {
+  font-size: 3em;
+  text-align: center;
+  padding: 1%;
+  color: black;
+  font-weight: bold;
+  background: gray;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 7%;
+}
+
+#refreshButton {
+  font-size: 0.5em;
+}
+
+#refreshButton a {
+  color: gray;
+}
+
+#current_conditions {
+  text-align: center;
+  margin: auto;
+}
+
+#address,
+#condition,
+#temp_all,
+#winds,
+#sunrise,
+#sunset {
+  border-radius: 6%;
+  padding: 1.5%;
+  margin: 1%;
+  font-size: 1.5em;
+  background: #B0B0B0;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: gray;
+}
+
+#copyright,
+#contact {
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: auto;
+  color: white;
+}
+
+#contact a {
+  color: white;
+}
+
+#hiddenEmail {
+  visibility: hidden;
+}
