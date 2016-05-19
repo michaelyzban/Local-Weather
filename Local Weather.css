@@ -1,98 +1,116 @@
 html {
-  background-size: cover;
-  background-position: center center;
+  background: white;
   background-repeat: no-repeat;
-  height: 100%;
+  background-size: cover;
+}
+
+#total {
+  color: black;
+  text-align: center;
 }
 
 body {
   color: white;
   margin: auto;
-  background: transparent;
-  
-}
-
-h1,
-h2 {
-  text-align: center;
-  color: #009933;
-  text-shadow: 2px 2px #B0B0B0;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 button {
   color: gray;
 }
 
-#icon img {
-  height: 1.5em;
-  width: 1.5em;
-}
-
-#time {
-  font-size: 0.6em;
-}
-
 #condition_all {
-  font-size: 3em;
+  color: black;
   text-align: center;
   padding: 1%;
-  color: black;
-  font-weight: bold;
   background: gray;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 40%;
+  margin-right: 40%;
   border-radius: 7%;
 }
 
-#refreshButton {
-  font-size: 0.5em;
+#condition_all #temp {
+  font-size: 3em;
+  font-weight: bold;
 }
 
-#refreshButton a {
-  color: gray;
+#condition {
+  text-transform: capitalize;
+}
+
+#converter {
+  margin: 0;
+  font-size: 0.8em;
 }
 
 #current_conditions {
+  display: block;
   text-align: center;
   margin: auto;
 }
 
-#address,
-#condition,
-#temp_all,
-#winds,
-#sunrise,
-#sunset {
+div#current_conditions > span {
   border-radius: 6%;
-  padding: 1.5%;
+  padding: 1%;
   margin: 1%;
   font-size: 1.5em;
   background: #B0B0B0;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#forecast {
+  display: inline;
+}
+
+span#forecast > div {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  width: 14%;
+  margin-left: 2%;
+  justify-content: space-around;
+}
+
+#forecast #time {
+  font-size: 1.5em;
+}
+
+#weather_icon {
+  height: 3em;
+  width: 3em;
+}
+
+#forecast #temp {
+  font-size: 2em;
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   background: gray;
 }
 
-#copyright,
-#contact {
-  padding-left: 3%;
-  padding-right: 3%;
-  margin: auto;
-  color: white;
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  colour: white;
 }
 
-#contact a {
+a {
   color: white;
+  text-decoration:
 }
 
 #hiddenEmail {
   visibility: hidden;
+}
+
+.right {
+  float: right;
+  margin-right: 3%;
 }
