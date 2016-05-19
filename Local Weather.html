@@ -1,51 +1,136 @@
-<html>
+<html lang="en-GB">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <title>Local Weather</title>
 </head>
+  
+<nav>
+  </nav>
+  
+<span id="total">
+  <h1>Local Weather</h1>
+  <br>
+  <!--
+  <h3>By Michael Ban</h3>
+-->
+</span>
+
 
 <body>
   <div id="wrapper">
     <div id="content">
-      <div id="header">
-        <h1>Local Weather Zipline</h1>
-        <h2>By Michael Ban</h2>
-      </div id="header">
-      <div id="condition_all" class="">
-        <span id="temp" class=""></span>
-        <span id="icon" class=""></span>
-        <span id="time"></span>
-        <button id="refreshButton">Refresh</button>
-      </div id="condition_all">
       <br>
-      <div id="current_conditions" class="container-fluid row">
+      <div id="condition_all">
+        <span id="temp"></span>
+        <img id="weather_icon" />
+        <time id="time"></time>
+        <button id="refreshButton">Refresh</button>
+      </div>
+      <br>
+      <div id="current_conditions" class="container row">
         <span id="address" class="col-xs-3"></span>
-        <span id="condition" class="col-xs-3"></span>
+        <span id="condition" class="col-xs-2"></span>
         <span id="temp_all" class="col-xs-3">
-        <span id="temperature" class="fahrenheit"></span>
-
         <span id="temp_min" class=""></span>
         <span id="temp_max" class=""></span>
         <button id="converter" class="">ºF/C</button>
         </span>
-        <span id="winds" class="col-xs-2"></span>
+        <span id="winds" class="col-xs-3"></span>
       </div>
-    </div id="content">
+      <br>
+
+      <span class="row container-fluid" id="forecast">
+        <div id="child1" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+        <div id="child2" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+        <div id="child3" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+        <div id="child4" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+        <div id="child5" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+        <div id="child6" class="col-xs-2">
+          <span id="time"></span>
+          <img id="weather_icon" />
+          <br>
+          <span id="temp"> º</span>
+          <br>
+          <span id="condition"></span>
+          <br>
+          <span id="temp_min"> /</span>
+          <span id="temp_max"> º</span>
+        </div>
+
+      </span>
+    </div>
     <br>
-    <div id="footer">
-      <span id="copyright">
-          (C) Copyright Michael Ban 2015
-          </span>
-      <span id="contact">
-            <a href = "mailto:michaelyzban@gmail.com">
+    <span id="footer">
+      <div id="copyright">
+        (C) Michael Ban 2015
+      </div>
+      <div id="contact">
+        <a href="mailto:example@example.com">
               Contact
             </a>
-          </span>
-      <button id="email">
-        Email</button>
-      <span id="hiddenEmail" class=""> michaelyzban@gmail.com
-          </span>
-    </div id="footer">
-  </div id="wrapper">
+      </div>
+      <div id="openweathermap"><a href="http://openweathermap.org/city">Weather obtained using OpenWeatherMap API</a>
+      </div>
+      <div id="HTML">Location obtained using HTML5 geolocation
+      </div>
+    </span>
+  </div>
 </body>
-  
+
 </html>
